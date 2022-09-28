@@ -1,7 +1,12 @@
 #!/usr/bin/python3
+import hidden_4
+
+i = 0
+
 if __name__ == '__main__':
-    from importlib import import_module
-    hidden_4 = import_module('hidden_4')
-    for name in dir(hidden_4):
-        if not name.startswith('__'):
-            print('{:s}'.format(name))
+    mylist = dir(hidden_4)
+    newlist = sorted(mylist)
+    while i < len(newlist):
+        if newlist[i][0] != '_':
+            print(newlist[i])
+        i += 1

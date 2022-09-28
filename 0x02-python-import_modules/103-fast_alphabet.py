@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-print(str(bytes(list(range(0x41, 0x5B))))[2:28])
+from string import ascii_uppercase
+print(ascii_uppercase)
